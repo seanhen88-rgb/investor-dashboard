@@ -43,10 +43,31 @@ box-shadow:0 3px 10px rgba(0,0,0,.1);
 <div class="card">
 <h2>Tools</h2>
 <p>Deal Analyzer</p>
-<p>Seller CRM</p>
-<p>Buyer List</p>
-<p>Marketing Tracker</p>
-</div>
+<h2>Deal Analyzer</h2>
 
-</body>
-</html>
+<p>ARV:</p>
+<input id="arv" type="number">
+
+<p>Repair Cost:</p>
+<input id="repairs" type="number">
+
+<p>Wholesale Fee:</p>
+<input id="fee" type="number">
+
+<br><br>
+
+<button onclick="calculate()">Calculate MAO</button>
+
+<h3 id="result"></h3>
+
+<script>
+function calculate(){
+let arv = document.getElementById("arv").value
+let repairs = document.getElementById("repairs").value
+let fee = document.getElementById("fee").value
+
+let mao = (arv * 0.7) - repairs - fee
+
+document.getElementById("result").innerText = "Max Offer: $" + mao
+}
+</script>
