@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scrappy Ventures Dashboard</title>
+<style>
+body{
+font-family:Arial;
+background:#f4f4f4;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+</style>
+</head>
+
+<body>
+
+<h1>Scrappy Ventures Command Center</h1>
+
+<div class="card">
+<h2>KPI Dashboard</h2>
+<p>Leads Today: 0</p>
+<p>Offers Sent: 0</p>
+<p>Contracts: 0</p>
+<p>Revenue This Month: $0</p>
+</div>
+
+<div class="card">
+<h2>Deal Pipeline</h2>
+<p>New Lead</p>
+<p>Contacted</p>
+<p>Offer Sent</p>
+<p>Under Contract</p>
+<p>Sold</p>
+</div>
+
+<div class="card">
+<h2>Tools</h2>
+<p>Deal Analyzer</p>
+<p>Seller CRM</p>
+<p>Buyer List</p>
+<p>Marketing Tracker</p>
+</div>
+
+</body>
+</html>
